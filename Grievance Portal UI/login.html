@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <!-- Include your CSS file -->
+    <link rel="stylesheet" href="login.css">
+    <style media="screen">
+        /* Add your custom styles here */
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form method="post" onsubmit="return validateForm();" id="loginForm">
+        <h3>Login Here</h3>
+        
+        <div class="sf">
+        
+            <label for="Designation" >Student</label><input type="radio" placeholder="Designation" name="Designation" id="Designation" > 
+    
+            <label for="Designation">Faculty</label><input type="radio" placeholder="Designation" name="Designation" id="Designation" > 
+            
+        </div>
+        <br><br>
+        <label for="name">Name</label>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <label for="username">Email</label>
+        <input type="email" placeholder="Enter your email" id="email" name="username">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="pass">
+        <button type="submit">Log In</button>
+        <p id="errorMessage" class="error-message"></p>
+    </form>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value.trim();
+            var password = document.getElementById("password").value.trim();
+            var Designation = document.querySelector('input[name="Designation"]:checked');
+            var name = document.getElementById("nameInput").value.trim(); // Get the entered name
+            
+            if (!email.includes("@bitsathy.ac.in")) {
+                alert("Enter a valid BITSATHY email.");
+                return false;
+            } else if (!Designation) {
+                alert("Please select your designation.");
+                return false;
+            } else if (password === "") {
+                alert("Please enter your password.");
+                return false;
+            } else if (name === "") { // Check if name is empty
+                alert("Please enter your name.");
+                return false;
+            } else {
+                // All validations passed
+                return true;
+            }
+        }
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            if (validateForm()) {
+                var name = document.getElementById("nameInput").value.trim();
+                window.location.href = "index.html?name=" + encodeURIComponent(name);
+            }
+        });
+    </script>
+</body>
+</html>

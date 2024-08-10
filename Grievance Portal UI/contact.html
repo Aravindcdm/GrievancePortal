@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievance Portal</title>
+
+    <link rel="stylesheet" href="contact.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' >
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
+    
+
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+       
+        
+        <a href="#" class="logo" style="margin-right: auto;"> <i class='bx bx-pen'></i>
+            Grievance<span class="animate" style="--i:1;">Portal</span></a>
+        
+        <!-- <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div> -->
+        <nav class="navbar">
+            <a href="index.html" >Home</a> <i style="font-size: large;" class="fa fa-home"></i>
+            <!-- <a href="dashboard.html">Dashboard</a>
+            <a href="quiz/quiz.html">Quiz </a>
+            <a href="games.html">Compilers </a>
+            <a href="contact.html" class="active">Contact</a> -->
+
+      
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </header>
+
+    <!-- https://formspree.io/f/moqzggqb -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact<span>Us</span></h2>
+      <form action="mail.php" method="POST" class="contact__form">
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <span class="focus"></span>
+          </div>
+    
+          <div class="input-field">
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <span class="focus"></span>
+          </div>
+        </div>
+    
+        <div class="input-box">
+          <div class="input-field">
+            <input type="number" name="mobile_number" placeholder="Your Mobile Number" required>
+            <span class="focus"></span>
+          </div>
+    
+          <div class="input-field">
+            <input type="email" name="email_address" placeholder="Email Address" required>
+            <span class="focus"></span>
+          </div>
+        </div>
+    
+        <div class="textarea-field">
+          <textarea name="message" cols="30" rows="10" placeholder="Your message is required...." required></textarea>
+          <span class="focus"></span>
+        </div>
+    
+        <div class="btn-box btns">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </form>
+    </section>
+    
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+
+        /* ... (your existing CSS styles) ... */
+        *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-color: darkblue;
+    background: #080710;
+    color: #E0FFFF;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+ul {
+    list-style-type: none;
+    justify-content: space-evenly;
+  }
+  
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+/* .shape:first-child{
+    background: linear-gradient(
+        #ffff,
+        #0000
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        black,
+        #E0FFFF
+    );
+    right: -30px;
+    bottom: -80px;
+} */
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        
+        padding: 22px 15%;
+        border-bottom: 1px solid transparent;
+        transition: all .45s ease;
+        background-color: #202020;
+        background-color: transparent;
+        background-color: #080710;
+        box-shadow: 10px 0px 40px 10px rgb(61, 87, 87);
+        
+    }
+
+.logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+     margin-right: 200px;
+      
+}
+
+span {
+    color: slategray;
+}
+
+span1 {
+    color: slategray;
+}
+
+.navlist {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlist a {
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: all .45s ease;
+    text-decoration: none;
+    justify-content: space-evenly;
+
+
+   
+    
+}
+
+.navlist a:hover {
+    color: #05b4ff
+}
+
+.navlist a.active {
+    color: slategray;
+}
+
+.content{
+    height: 620px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    background-color: black;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 400px;
+    left: 80pc;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    box-shadow: 10px 10px 400px 40px darkslategray;
+    padding: 40px 35px;
+    margin-top: 30px;
+    overflow: scroll;
+    
+   
+}
+.content *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.content h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color:#E0FFFF ;
+    color: #080710;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 90px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+
+.intro{
+    padding-top : 80px;
+    padding-left: 40px;
+    height: 400px;
+    width: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navlist li {
+    margin-left: 200px;
+}
+
+.navlist li:last-child {
+    margin-left: 10px;
+}
+
+.navlist li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navlist li a.active {
+    font-weight: bold;
+}
+
+
+.intro{
+    margin-left: 20px;
+    margin-top: 40px;
+    background-color: #080710;
+    border: 1px solid slategray;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    box-shadow: 10px 40px 40px 40px rgb(34, 34, 34);
+    border-radius: 10px;
+    
+}
+
+
+/*----------------------------------------------------------ANIMATION STARTS----------------------------------------------------------------------*/
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} */
+
+/* Apply fade-in animation to the span element */
+.intro span1 {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+
+/* @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.content h1 {
+    animation: slideIn 1s ease-out forwards, fadeIn 1s ease-out forwards;
+}
+
+.content span1 {
+    animation: fadeIn 1s ease-in-out forwards;
+} */
+
+
+@keyframes slideDown {
+    from { transform: translateY(-50%); }
+    to { transform: translateY(0); }
+}
+
+/* Apply slide down animation to the content */
+.intro {
+    animation: slideDown 1s ease-out forwards;
+}
+
+/*----------------------------------------------------------ANIMATION ENDS------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute space evenly between items */
+    padding: 0; /* Remove default padding */
+}
+
+.navlist a {
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .45s ease;
+    text-decoration: none;
+}
+
+.navlist a:hover {
+    color: #05b4ff;
+}
+
+.navlist a.active {
+    color: slategray;
+}
+
+
+
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 80%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+
+.form{
+    height: 700px;
+    width: 500px;
+    border: 2px solid darkslategray;
+    padding: 30px;
+    margin-left: 50px;
+    box-shadow: 10px 10px 10px 10px darkslategray;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+/* Sidebar links */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Sidebar links hover effect */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Close button */
+.closebtn {
+    position: absolute;
+    top: 80px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #111;
+}
+
+        
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    z-index: 2;
+    position: absolute;
+    top: -40px; /* Adjust as needed */
+    left: -760px; /* Adjust as needed */
+}
+
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin-top: -2px;
+  }
+  
+  .bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: white;
+  }
+  
+  /* Animation */
+  .open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For WebKit-based browsers like Chrome and Safari */
+/* This changes both the thumb and the track color */
+/* For WebKit-based browsers like Chrome and Safari */
+.content::-webkit-scrollbar {
+    width: 12px; /* Adjust the width as needed */
+  }
+  
+  .content::-webkit-scrollbar-thumb {
+    background-color: #000; /* Change the thumb color */
+  }
+  
+  .content::-webkit-scrollbar-track {
+    background-color: #f0f0; /* Change the track color */
+  }
+  
+  
+  /* For Firefox */
+  /* This changes the scrollbar color */
+  /* Note: This property is not supported in Firefox on macOS */
+  /* Firefox does not support changing the scrollbar width */
+  /* Also, Firefox does not support changing the scrollbar thumb color directly */
+  /* You can use scrollbar-color to set both the thumb and the track color */
+  /* But, this property is not supported in all versions of Firefox */
+  /* Check compatibility before using it */
+  /* You may need to use -moz-appearance: none; to remove the default scrollbar appearance in Firefox */
+  /* Note: scrollbar-color and scrollbar-width are not supported in Internet Explorer */
+  
+  /* Example for Firefox */
+  /* Only works in newer versions of Firefox */
+  /* Uncomment the lines below if you want to apply styles to Firefox */
+  /*
+  * {
+    scrollbar-color: #ff0000 #f0f0f0; 
+  }
+  */
+  

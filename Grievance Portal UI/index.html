@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+    var app = angular.module('myApp');
+
+    app.controller('AnotherPageController', function($scope, $rootScope) {
+        // Retrieving the user's name from $rootScope
+        $scope.userName = $rootScope.userName;
+    });
+</script>
+     -->
+    <title>Portal</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' >
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style media="screen"></style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>.fa {
+    display: inline; 
+    margin-left: 5px; /
+  }
+
+ .navlist :hover{
+    /* background-color: rebeccapurple; */
+    transform: scale(1.1);
+    color: #95c4da;
+  }
+  </style>
+<header>
+   
+    <ul class="navlist">
+        <!-- <button class="openbtn" onclick="toggleSidebar()" style="margin-right: 600px;" >☰ </button> --> 
+        <button class="hamburger" onclick="toggleSidebar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          
+        <li><a href="#" class="">Home<i class="fa fa-home"></i></a></li>
+        <li><a href="#form">GrievanceForm</a></li>
+        <li><a href="#">TopGrievances</a></li>
+        <li><a href="contact.html" style="margin-left: 250px;">Contact</a></li>
+    </ul>
+    
+</header>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+    <br><br><br><br>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="#">Help</a>
+</div>
+
+<!-- Your content goes here -->
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+<br><br>
+<div class="content">
+    
+    <h1>Grievance</h1>
+    <h1>and</h1>
+    <h1>Redressal</h1>
+    <h1>Portal</h1>
+    <p>
+        A grievance and redressal portal serves as a digital platform designed to address and resolve issues, complaints, or grievances raised by individuals or entities.
+        It provides a structured mechanism for users to submit their concerns, feedback, or complaints regarding various matters, such as services, policies, or misconduct.
+        
+        These portals typically offer a user-friendly interface where users can easily register their grievances by filling out predefined forms or providing relevant details.
+      </b></p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ipsam porro at, cumque repudiandae modi quos sed ipsum voluptatibus optio rerum esse id, iusto nihil? Eaque, iure laborum! Vero, quis!</p>
+</div>
+<br><br><br><br>
+<div class="intro">
+    <span id="nameDisplay" style="color: #95c4da;" class="nameDisplay"></span>
+    <h1>Welcome to the <span1>Grievance Portal</span1> !</h1>
+    <!-- Display the user's name -->
+    
+    <br>
+    <p style="padding-left:20px ;">
+        A grievance and redressal portal serves as a digital platform designed to address and
+         resolve issues, complaints, or grievances raised by individuals or entities. 
+        It provides a structured mechanism for users to submit their concerns, feedback, 
+        or complaints regarding various matters, such as services, policies, or misconduct.
+        These portals typically offer a user-friendly interface where users can easily register their 
+        grievances by filling out predefined forms or providing relevant details. Once a grievance is submitted, 
+        it undergoes a systematic process of review and resolution by designated authorities or administrators.
+    </p>
+    <br><br><br><br><br><br><br><b><br>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+
+
+
+<div class="form" id="form">
+    <h1>Grievance<span>Form</span></h1>
+    <form action="https://script.google.com/a/macros/bitsathy.ac.in/s/AKfycbyC6XM9fVAvHM7SlCxrFmA-aGF70F0fmxX5gA8ZU4GvpxG6YPOtUve1gB7VAk-4E2fl7A/exec" method="post">
+        <label for="name">Your name</label>
+        <input type="text" name="name" placeholder="Enter your name">
+
+        <label for="rollNo">Roll No</label>
+        <input type="text" name="rollNo" placeholder="Enter your Roll Number">
+
+        <label for="department">Department</label>
+        <input type="text" name="department" placeholder="Enter your Department">
+
+        <label for="grievance">Grievance</label>
+        <input type="text" name="grievance" style="height: 100px" placeholder="Enter your Grievance">
+
+        <button type="submit" style="border-radius: 10px; background-color: lightgrey; width: 100px;height: 100%;">Submit</button>
+    </form>
+</div>
+
+
+
+<!-- <script>
+    function doGet(e) {
+  return HtmlService.createHtmlOutput("This is a Google Apps Script web app.");
+}
+
+</script> -->
+
+
+
+
+
+
+
+<script>
+function toggleSidebar() {
+    var sidebar = document.getElementById("mySidebar");
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+    } else {
+        sidebar.style.width = "250px";
+    }
+}
+</script>
+<script>
+    // Function to parse the URL parameters
+    function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
+    }
+    
+    // Get the name parameter from the URL
+    var name = getURLParameter('name');
+    
+    // Display the name
+    if (name) {
+        document.getElementById('nameDisplay').innerText = "Hello, " + name + "!";
+    }
+    </script>   
+
+<script src="NAME.JS"></script>
+
+
+
+<script>
+    document.getElementById("grievanceForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get form input values
+        var name = document.getElementById("name").value;
+        var rollNo = document.getElementById("rollNo").value;
+        var department = document.getElementById("department").value;
+        var grievance = document.getElementById("grievance").value;
+
+        // Create an object to store the form data
+        var formData = {
+            name: name,
+            rollNo: rollNo,
+            department: department,
+            grievance: grievance
+        };
+
+        // For demonstration, you can log the form data to the console
+        console.log(formData);
+
+        // Here, you can send the form data to a server using AJAX or perform any other desired action
+
+        // Optionally, you can reset the form after submission
+        document.getElementById("grievanceForm").reset();
+    });
+</script>
+
+</body>
+</html>
